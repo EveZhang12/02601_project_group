@@ -1,0 +1,29 @@
+{
+  "_comment": "Checkpoint-1 input parameters for the local 2-D vessel model. Units: mm, s, mg/L, Pa*s, K. Sources: see README (References).",
+  "vessel": {
+    "radius_mm": 0.1,
+    "length_mm": 10.0,
+    "mean_velocity_mm_s": 2.0
+  },
+  "blood": {
+    "plasma_viscosity_pa_s": 0.0012,
+    "temperature_k": 310.15
+  },
+  "drug": {
+    "name": "Acetaminophen (paracetamol)",
+    "molecular_weight_g_mol": 151.16,
+    "molecular_radius_nm": null
+  },
+  "inlet": {
+    "kind": "constant",
+    "concentration_mg_L": 10.0,
+    "bolus_duration_s": 1.0
+  },
+  "numerics": {
+    "nx": 200,
+    "ny": 24,
+    "cfl": 0.4,
+    "duration_s": 10.0,
+    "n_frames": 101
+  }
+}
